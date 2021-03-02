@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Quicksort Visual</title>
+</head>
+<body>
+  <main>
+    <div id="settings">
+      <input id="elements_count" type="range" min="10" max="2000" value="250">
+      <div id="count_indicator">0</div>
+      <select id="sorting_algorithm">
+        <option value="quicksort_nrm">Quicksort</option>
+        <option value="quicksort_alt">Alternating Quicksort</option>
+        <option value="bubble_sort">Bubble Sort</option>
+        <option value="merge_sort">Merge Sort</option>
+      </select>
+      <button id="shuffle">Shuffle</button>
+      <button id="sort">Sort</button>
+    </div>
+    <div id="container"></div>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
