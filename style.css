@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#settings {
+  height: 4em;
+  background-color: rgb(34, 111, 255);
+  display: flex;
+  align-items: center;
+  padding: 0 3em;
+}
+
+#elements_count {
+  -webkit-appearance: none;
+  width: 30em;
+  height: 8px;
+  border-radius: 5px;  
+  background: #ffffff;
+  outline: none;
+}
+
+#elements_count::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background: rgb(166, 194, 255);
+  cursor: pointer;
+}
+
+#elements_count::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(166, 194, 255);
+  cursor: pointer;
+}
+
+#count_indicator {
+  width: 3em;
+  text-align: center;
+  margin-left: 2em;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 1px;
+  pointer-events: none;
+}
+
+#settings > button {
+  border: solid white 5px;
+  border-radius: 5px;
+  padding: 0 1em;
+  height: 3em;
+  background: none;
+  outline: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#sorting_algorithm {
+  margin-left: 2em;
+  outline: none;
+  width: 20em;
+  height: 2em;
+}
+
+#shuffle {
+  margin: 0 1em 0 auto;
+}
+
+#container {
+  margin: auto 2em 1em;
+  height: 79vh;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#container > div {
+  background-color: rgb(34, 111, 255);
+  margin-top: auto;
+  width: 100%;
+}
